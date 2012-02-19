@@ -9,7 +9,7 @@ Back porting native JSON support from SpiderMonkey 1.85 to SpiderMonkey 1.70.
 * Why?
   - SpiderMonkey is a widely used opensource JS engine, I'm also using it to do script binding for some C++ applications. 
   - The JSAPI provide by SpiderMonkey v1.85 has evolved without backward compatibility, a lagcy code base I'm using is not able to upgrade to new API in a short time.
-  - The later version since v1.70 requires MinGW to build on Windows platform. 
+  - SpiderMonkey v1.70 doesn't provide native JSON support, and the later version since v1.70 requires MinGW to build on Windows platform. 
 
 **This project is to provide a native SpiderMonkey lib/dll on Windows with native JSON support.**
 
